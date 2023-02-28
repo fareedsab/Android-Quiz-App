@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:layout_marginTop="@dimen/_20sdp"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:id="@+id/logoutbtn"
+        android:onClick="onlogoutPressed"/>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="NEW EMPLOYEE"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/colorAccent"
+        />
+
+    <TextView
+        fontPath="fonts/nunito_light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:alpha="0.8"
+        android:text="Fill the details below to add a New Employee"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:ignore="MissingPrefix" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:cardCornerRadius="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_profile"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        fontPath="fonts/nunito_light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="UserName" />
+
+
+    <EditText
+        android:id="@+id/addUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/text_border"
+        android:padding="@dimen/_10sdp"
+        android:singleLine="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <TextView
+        fontPath="fonts/nunito_light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="Password" />
+
+
+    <EditText
+        android:id="@+id/addPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/text_border"
+        android:padding="@dimen/_10sdp"
+        android:singleLine="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="SpeakableTextPresentCheck" />
+        <TextView
+            fontPath="fonts/nunito_light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="FullName" />
+
+
+    <EditText
+        android:id="@+id/addFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/text_border"
+        android:padding="@dimen/_10sdp"
+        android:singleLine="true"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            fontPath="fonts/nunito_light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="CNIC"
+            />
+
+    <EditText
+        android:id="@+id/addCNIC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/text_border"
+        android:inputType="number"
+        android:maxLength="13"
+        android:padding="@dimen/_10sdp"
+        android:singleLine="true"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="MissingPrefix,SpeakableTextPresentCheck" />
+
+        <TextView
+            fontPath="fonts/nunito_light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Code"
+            tools:ignore="MissingPrefix" />
+
+    <EditText
+        android:id="@+id/addCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/text_border"
+        android:inputType="number"
+        android:padding="@dimen/_10sdp"
+        android:singleLine="true"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="MissingPrefix,SpeakableTextPresentCheck" />
+
+        <TextView
+            fontPath="fonts/nunito_light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Joining Date"
+
+            tools:ignore="MissingPrefix" />
+
+    <EditText
+        android:id="@+id/addjoiningDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/text_border"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:onClick="onjoindatePressed"
+        android:padding="@dimen/_10sdp"
+        android:singleLine="true"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="MissingPrefix,SpeakableTextPresentCheck" />
+
+        <TextView
+            fontPath="fonts/nunito_light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Department"
+            tools:ignore="MissingPrefix" />
+
+        <Spinner
+            android:id="@+id/addDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:entries="@array/departments"
+
+            android:spinnerMode="dropdown" />
+    <TextView
+        fontPath="fonts/nunito_light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Designation"
+        tools:ignore="MissingPrefix" />
+
+    <Spinner
+        android:id="@+id/addDesignation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/designation"
+
+        android:spinnerMode="dropdown" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addEmployee"
+        android:text="Add Employee"
+        android:onClick="onAddpressed"
+        android:background="@drawable/add_button"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="40dp"
+        />
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+</layout>

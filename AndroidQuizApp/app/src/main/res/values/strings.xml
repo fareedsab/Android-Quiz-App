@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Android Quiz App</string>
+    <array name="departments">
+        <item>Select Department</item>
+
+        <item>Ops</item>
+        <item>Tech</item>
+        <item>Marketing</item>
+    </array>
+    <array name="designation">
+        <item>Select Designation</item>
+
+        <item>Senior</item>
+        <item>Junior</item>
+        <item>Associate</item>
+    </array>
+</resources>
